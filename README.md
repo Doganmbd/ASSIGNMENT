@@ -1,2 +1,2 @@
-# 20.11.2021
+# PYTHON ASSİGNMENT
 
