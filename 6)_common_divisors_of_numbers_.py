@@ -1,0 +1,125 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "6) common divisors of numbers.py",
+      "provenance": [],
+      "authorship_tag": "ABX9TyOkiEruJ/VhUeDMMEfYI6Qw",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Dogan-mb/ASSIGNMENT/blob/main/6)_common_divisors_of_numbers_.py\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 22,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CF8ybskrEhJw",
+        "outputId": "df394ae1-6a1c-4fdb-dcef-fb3b7ae0458a"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a first number = 105\n",
+            "Enter a second number = 35\n",
+            "[1, 5, 7, 35]\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Write a program that prints the common divisors of two numbers received from the user.\n",
+        "\n",
+        "number_1 =int(input(\"Enter a first number = \"))\n",
+        "number_2 =int(input(\"Enter a second number = \"))\n",
+        "\n",
+        "my_list_1 = []\n",
+        "my_list_2 = []\n",
+        "conclusion = []\n",
+        "\n",
+        "for i in range(1,number_1 + 1):\n",
+        "  if number_1 % i == 0 :\n",
+        "    my_list_1.append(i)\n",
+        "\n",
+        "for j in range(1,number_2 + 1):\n",
+        "  if number_2 % j == 0 :\n",
+        "    my_list_2.append(j)\n",
+        "\n",
+        "for common in my_list_1 :\n",
+        "  if common in my_list_2 :\n",
+        "    conclusion.append(common)\n",
+        "\n",
+        "print(conclusion)  \n",
+        "\n",
+        "   "
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Write a program that prints the common divisors of two numbers received from the user.\n",
+        "\n",
+        "number_1 =int(input(\"Enter a first number = \"))\n",
+        "number_2 =int(input(\"Enter a second number = \"))\n",
+        "\n",
+        "my_list_1 = []\n",
+        "my_list_2 = []\n",
+        "conclusion = []\n",
+        "\n",
+        "for i in range(1,number_1 + 1):\n",
+        "  if number_1 % i == 0 :\n",
+        "    my_list_1 += [i]\n",
+        "\n",
+        "for j in range(1,number_2 + 1):\n",
+        "  if number_2 % j == 0 :\n",
+        "    my_list_2 += [j]\n",
+        "\n",
+        "for common in my_list_1 :\n",
+        "  if common in my_list_2 :\n",
+        "    conclusion += [common]\n",
+        "\n",
+        "print(conclusion)  "
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0DpGPsXVS4Zx",
+        "outputId": "6a0c502a-e5b2-400e-e43b-10347dccd286"
+      },
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a first number = 105\n",
+            "Enter a second number = 35\n",
+            "[1, 5, 7, 35]\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
